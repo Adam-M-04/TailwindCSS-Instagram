@@ -598,12 +598,16 @@ video {
   margin-left: 0.75rem;
 }
 
-.ml-4 {
-  margin-left: 1rem;
+.ml-32 {
+  margin-left: 8rem;
 }
 
 .ml-5 {
   margin-left: 1.25rem;
+}
+
+.ml-6 {
+  margin-left: 1.5rem;
 }
 
 .mr-3 {
@@ -638,6 +642,10 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-16 {
   height: 4rem;
 }
@@ -648,6 +656,10 @@ video {
 
 .h-4 {
   height: 1rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .h-7 {
@@ -668,6 +680,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.w-12 {
+  width: 3rem;
 }
 
 .w-16 {
@@ -748,6 +764,10 @@ video {
   border-radius: 9999px;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border-none {
   border-style: none;
 }
@@ -757,14 +777,14 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-zinc-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 212 216 / var(--tw-bg-opacity));
+}
+
 .bg-zinc-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(113 113 122 / var(--tw-bg-opacity));
-}
-
-.bg-zinc-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -773,10 +793,6 @@ video {
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.pr-16 {
-  padding-right: 4rem;
 }
 
 .pr-4 {
@@ -931,8 +947,9 @@ video {
     background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   }
 
-  .dark\:fill-green-500 {
-    fill: #22c55e;
+  .dark\:bg-zinc-800 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(39 39 42 / var(--tw-bg-opacity));
   }
 
   .dark\:fill-white {
@@ -972,5 +989,85 @@ video {
   .hover\:dark\:hover\:bg-zinc-900:hover:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  }
+}
+
+@media not all and (min-width: 1112px) {
+  .max-ex_lg\:-ml-8 {
+    margin-left: -2rem;
+  }
+
+  .max-ex_lg\:ml-8 {
+    margin-left: 2rem;
+  }
+
+  .max-ex_lg\:justify-center {
+    justify-content: center;
+  }
+
+  .max-ex_lg\:pl-8 {
+    padding-left: 2rem;
+  }
+}
+
+@media not all and (min-width: 1024px) {
+  .max-lg\:hidden {
+    display: none;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  .max-md\:ml-0 {
+    margin-left: 0px;
+  }
+
+  .max-md\:hidden {
+    display: none;
+  }
+}
+
+@media (min-width: 1112px) {
+  .ex_lg\:block {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:-ml-8 {
+    margin-left: -2rem;
+  }
+
+  .xl\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
+
+  .xl\:w-auto {
+    width: auto;
+  }
+
+  .xl\:justify-center {
+    justify-content: center;
+  }
+
+  .xl\:rounded-2xl {
+    border-radius: 1rem;
+  }
+
+  .xl\:pr-16 {
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:ml-0 {
+    margin-left: 0px;
   }
 }
